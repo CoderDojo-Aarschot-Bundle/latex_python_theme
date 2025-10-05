@@ -1,0 +1,58 @@
+\usepackage{xcolor}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+
+
+\definecolor{darkGreen}{rgb}{0, .4, .1}
+\definecolor{darkCyan}{rgb}{0, .4, .4}
+\definecolor{fluoGreen}{rgb}{.74, 1, .80}
+
+% \newenvironment{objective}{
+% 	\begin{center}
+% 		\begin{adjustbox}{bgcolor=fluoGreen, cframe=darkGreen}
+% 			\begin{adjustbox}{margin=1em}
+% 				\begin{minipage}{.07\linewidth}
+% 					\includegraphics[width=\linewidth]{\pythonThemeDirectory/letsTryOut.png}
+% 				\end{minipage}
+% 				\hspace*{2mm} \textcolor{darkCyan}{\vrule} \hspace*{1mm}
+% 				\begin{minipage}{.7\linewidth}
+% 					{
+% 						\footnotesize
+% 						\textcolor{darkGreen}{
+% 							\textbf{Doelstelling}
+% 							% \hrule
+% 						}
+% 					}
+% 					\raggedright                                                % text alignment justify without ...
+% 					\itshape
+% 	}{
+% 				\end{minipage}
+% 			\end{adjustbox}
+% 		\end{adjustbox}
+% 	\end{center}
+% }
+
+\newenvironment{objective}{
+	\begin{center}
+		\begin{adjustbox}{bgcolor=fluoGreen, cframe=darkGreen}
+			\begin{adjustbox}{margin=1em}
+				\begin{minipage}{.82\linewidth}
+					{
+						\small
+						\textcolor{darkCyan}{
+							\textbf{Doelstelling}
+							\hrule
+							\vspace*{4mm} 
+						}
+					}
+					\raggedright                                                % text alignment justify without ...
+					\itshape
+					\hspace*{.03\linewidth}
+					\begin{minipage}{.95\linewidth}
+	}{
+					\end{minipage}
+				\end{minipage}
+			\end{adjustbox}
+		\end{adjustbox}
+	\end{center}
+}
